@@ -4,7 +4,7 @@ use warnings;
 use FlightFactory;
 
 my $cargo_flight = FlightFactory->new_flight({ cargo => [ 'Jelly beans' ] });
-my $holiday_flight = FlightFactory->new_flight({ cargo => [qw( Bob Tom )] });
+my $holiday_flight = FlightFactory->new_flight({ passengers => [qw( Bob Tom )] });
 
 use Data::Dumper;
 print "Cargo flight:\n";
